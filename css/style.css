@@ -1,0 +1,747 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*=============================
+=            FONTS            =
+=============================*/
+/*-----  End of FONTS  ------*/
+/*=============================================================
+=            Media Queries            =
+=============================================================*/
+/*=============================================================
+=            iPhone 5 & 5S Media Queries            =
+=============================================================*/
+/*----------  iPhone 5 & 5S in portrait & landscape  ----------*/
+/*==============================================
+=            iPhone 6 Media Queries            =
+==============================================*/
+/*----------  iPhone 6 in portrait & landscape  ----------*/
+/*======================================================
+=            Turn Off Number Input Spinners            =
+======================================================*/
+/*=====================================
+=            Custom styles            =
+=====================================*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clear {
+  clear: both;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #555559;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+html,
+body {
+  height: 100%;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
+}
+* {
+  box-sizing: border-box;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #555559;
+}
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="number"]:-moz-placeholder,
+input[type="search"]:-moz-placeholder,
+input[type="url"]:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #555559;
+}
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="url"]::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #555559;
+}
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #555559;
+}
+input,
+textarea,
+button,
+select {
+  color: inherit;
+  font: inherit;
+}
+.f_clear {
+  height: auto;
+}
+.container {
+  height: auto;
+  width: 100%;
+}
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.content {
+  width: 100%;
+}
+@media only screen and  (min-width: 1200px) 
+                  and (max-width: 1599px) 
+                  and (-webkit-min-device-pixel-ratio: 1) {
+  .content {
+    width: 1140px;
+  }
+}
+.btn {
+  background-clip: padding-box;
+  border-radius: none;
+  border: none;
+  display: inline-block;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: .75;
+}
+.btn[disabled] {
+  background-color: gray;
+}
+.link:hover,
+.link:focus {
+  text-decoration: none;
+}
+/*-----  End of Custom styles  ------*/
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` class sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+@icon-home-group: 'icon-home' @icon-home @icon-home-2x;
+
+.icon-home {
+  .retina-sprite(@icon-home-group);
+}
+*/
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+/*
+The `.retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in LESS
+
+.retina-sprites(@retina-groups);
+*/
+/*==============================
+=            HEADER            =
+==============================*/
+.site-header {
+  position: relative;
+}
+.site-header::before {
+  content: '';
+  background: url(../img/header-shadow.png) no-repeat;
+  width: 100%;
+  height: 175px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.food-grid {
+  max-width: 100%;
+}
+.food-grid__image {
+  width: 100%;
+}
+.instagram {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 15px;
+  right: 21px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.instagram__icon {
+  display: block;
+  background-image: url(../img/sprite/sprite.png);
+  background-position: 0px 0px;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .instagram__icon {
+    background-image: url(../img/sprite/sprite-retina.png);
+    background-size: 20px 20px;
+  }
+}
+.header-nav {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0 2px 7.7px 0.3px rgba(0, 0, 0, 0.11);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .header-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.header-nav__item {
+  margin: 0 39px;
+  color: #2e2e2e;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header-nav__item:hover,
+.header-nav__item:focus {
+  text-decoration: underline;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .header-nav__item {
+    margin: 10px 0;
+  }
+}
+/*-----  End of HEADER  ------*/
+.promo {
+  background-color: #fbfafa;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 110px;
+  padding-bottom: 172px;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .promo {
+    padding: 50px 0;
+  }
+}
+.promo__icon {
+  display: block;
+  background: url(../img/png/hotdog.png) no-repeat;
+  width: 92px;
+  height: 92px;
+  margin-bottom: 25px;
+}
+.title {
+  color: #555559;
+  font-size: 5.6rem;
+  font-weight: 300;
+  line-height: 6.6rem;
+  text-align: center;
+  width: 64.444444444%;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .title {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+}
+.btn {
+  margin-top: 84px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 310px;
+  height: 65px;
+  background-color: #286782;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.menu__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .menu__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.menu-content {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.menu-content--1 {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.menu-content--2 {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.menu-content--3 {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .menu-content {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 20px 0;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
+  .menu-content {
+    height: 576px;
+  }
+}
+@media only screen and  (min-width: 1200px) 
+                  and (max-width: 1599px) 
+                  and (-webkit-min-device-pixel-ratio: 1) {
+  .menu-content {
+    height: 576px;
+  }
+}
+.menu-content__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  width: 63.055555556%;
+  position: relative;
+}
+.menu-content__title::before {
+  content: '';
+  width: 31px;
+  height: 2px;
+  background-color: #286782;
+  position: absolute;
+  top: 50%;
+  left: -53px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .menu-content__title {
+    text-align: center;
+  }
+  .menu-content__title::before {
+    top: 150%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+.menu-content__description {
+  margin-top: 38px;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 24px;
+  width: 63.055555556%;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .menu-content__description {
+    text-align: center;
+  }
+}
+.menu-image {
+  width: 50%;
+  height: 576px;
+}
+.menu-image--1 {
+  background: url(../img/jpg/menu1.jpg) no-repeat;
+  background-size: cover;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.menu-image--2 {
+  background: url(../img/jpg/menu2.jpg) no-repeat;
+  background-size: cover;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.menu-image--3 {
+  background: url(../img/jpg/menu3.jpg) no-repeat;
+  background-size: cover;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .menu-image {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 288px;
+  }
+}
+/*==============================
+=            FOOTER            =
+==============================*/
+.site-footer {
+  width: 100%;
+  height: 80px;
+  background-color: #efefef;
+  border: 2px solid #e9e9e9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.388888889%;
+  color: #555559;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .site-footer {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+.contacts {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (min-width : 320px) and (max-width : 766px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts__number::before,
+  .contacts__link::before {
+    content: '|';
+    margin: 0 14px;
+  }
+}
+@media only screen and  (min-width: 1200px) 
+                  and (max-width: 1599px) 
+                  and (-webkit-min-device-pixel-ratio: 1) {
+  .contacts__number::before,
+  .contacts__link::before {
+    content: '|';
+    margin: 0 14px;
+  }
+}
+/*-----  End of FOOTER  ------*/
